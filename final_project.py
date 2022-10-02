@@ -71,13 +71,11 @@ if(n1==1):
 
 
     def compare_image(image_one , image_two):
-        
         gray1=cv2.cvtColor(image_one,cv2.COLOR_BGR2GRAY )
         gray2=cv2.cvtColor(image_two,cv2.COLOR_BGR2GRAY )
 
         gray1= cv2.blur(gray1,(5,5))
         gray2= cv2.blur(gray2,(5,5))
-
 
         (score,diff)=structural_similarity(gray1,gray2,full=True)
         diff=(diff * 255).astype("uint8")
