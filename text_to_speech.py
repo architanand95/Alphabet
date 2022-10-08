@@ -1,11 +1,12 @@
 # Import the Gtts module for text
 # to speech conversion
+# Speech recognition module
 from gtts import gTTS
 
 # import Os module to start the audio file
 import os
 
-mytext = 'hello mr dj mera gaana please play'
+mytext = 'This is Test file'
 
 # Language we want to use
 language = 'en'
